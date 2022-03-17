@@ -1,3 +1,4 @@
+from ensurepip import version
 from setuptools import setup
 import os, re
 
@@ -14,7 +15,8 @@ def find_value(name):
 
 setup(
     name                = find_value('title'),
-    use_scm_version     = True,
+    use_scm_version     = False,
+    version             = '2.7.8-mod',
     description         = find_value('description'),
     long_description    = read('README.rst'),
     url                 = find_value('url'),
